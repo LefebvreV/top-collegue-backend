@@ -29,6 +29,11 @@ public class CollegueController {
 		return this.colleguetRepo.findAll();
 	}
 	
+	@RequestMapping(value = "/{pseudo}", method = RequestMethod.GET)
+	public Collegue afficheCollegue(@PathVariable String pseudo) {
+		return this.colleguetRepo.findByPseudo(pseudo);
+	}
+
 	@RequestMapping(value="/{pseudo}" , method = RequestMethod.PATCH)
 	public Collegue scorer(@PathVariable String pseudo, @RequestBody ActionIhm avis) {
 		Collegue update = new Collegue();

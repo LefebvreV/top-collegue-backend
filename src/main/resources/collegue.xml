@@ -6,39 +6,64 @@
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.3.xsd">
 
 	<bean id="collegue1" class="dev.collegue.entite.Collegue">
-		<property name="pseudo" value="Charles"></property>
+		<property name="pseudo" value="Superman"></property>
 		<property name="score" value="0"></property>
 		<property name="url" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo7lYOkeYbc4A6lC2mRYUWChn-5004gdaJsWWiwMuOqBfynJsj0w"></property>
+		<property name="nom" value="Kent"></property>
+		<property name="prenom" value="Clark"></property>
+		<property name="adresse" value="Metropolis"></property>
+		<property name="email" value="viveSuperman@heroes.net"></property>
 	</bean>
 	
 	<bean id="collegue2" class="dev.collegue.entite.Collegue">
-		<property name="pseudo" value="Henry"></property>
+		<property name="pseudo" value="Batman"></property>
 		<property name="score" value="995"></property>
 		<property name="url" value="https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/032011/batman_logo.png?itok=Sg7_o5OE"></property>
+		<property name="nom" value="Wayne"></property>
+		<property name="prenom" value="Bruce"></property>
+		<property name="adresse" value="Gotham city"></property>
+		<property name="email" value="aMortSuperman@heroes.net"></property>
 	</bean>
 	
 	<bean id="collegue3" class="dev.collegue.entite.Collegue">
-		<property name="pseudo" value="Matthieu"></property>
+		<property name="pseudo" value="Cyborg"></property>
 		<property name="score" value="-995"></property>
 		<property name="url" value="https://i.pinimg.com/236x/98/20/26/9820264061ce4327515caff9e3dba394--aquaman-cyborgs.jpg"></property>
+		<property name="nom" value="Stone"></property>
+		<property name="prenom" value="Victor"></property>
+		<property name="adresse" value="San Fancisco"></property>
+		<property name="email" value="robot4life@heroes.net"></property>
 	</bean>
 	
 	<bean id="collegue4" class="dev.collegue.entite.Collegue">
-		<property name="pseudo" value="Juliette"></property>
+		<property name="pseudo" value="Wonder Woman"></property>
 		<property name="score" value="40"></property>
 		<property name="url" value="https://www.stoneykins.com/Patterns2/product_images/k/912/Wonder_Woman_Logo_02_tn__36468_std.png"></property>
+		<property name="nom" value="Prince"></property>
+		<property name="prenom" value="Diana"></property>
+		<property name="adresse" value="Athène"></property>
+		<property name="email" value="womanPower@heroes.net"></property>
 	</bean>
 	
 	<bean id="collegue5" class="dev.collegue.entite.Collegue">
-		<property name="pseudo" value="José"></property>
+		<property name="pseudo" value="Green Lantern"></property>
 		<property name="score" value="-250"></property>
 		<property name="url" value="https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/0012/8465/brand.gif?itok=qNG-TV26"></property>
+		<property name="nom" value="Hal"></property>
+		<property name="prenom" value="Jordan"></property>
+		<property name="adresse" value="Terre"></property>
+		<property name="email" value="collantsVert@heroes.net"></property>
 	</bean>
 	
 	<bean id="collegue6" class="dev.collegue.entite.Collegue">
-		<property name="pseudo" value="Paul"></property>
+		<property name="pseudo" value="Flash"></property>
 		<property name="score" value="60"></property>
 		<property name="url" value="https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/0012/4959/brand.gif?itok=EiKwEJuY"></property>
+		<property name="nom" value="Allen"></property>
+		<property name="prenom" value="Barry"></property>
+		<property name="adresse" value="Central city"></property>
+		<property name="email" value="sonicRouge@heroes.net"></property>
+		
 	</bean>
 
 </beans>
