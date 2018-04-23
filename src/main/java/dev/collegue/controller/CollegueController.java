@@ -19,7 +19,9 @@ import dev.collegue.controller.vm.ActionIhm;
 import dev.collegue.controller.vm.CollegueJson;
 import dev.collegue.controller.vm.CollegueJsonApi;
 import dev.collegue.entite.Collegue;
+import dev.collegue.entite.Vote;
 import dev.collegue.repository.CollegueRepository;
+import dev.collegue.repository.VoteRepository;
 import dev.collegue.service.CollegueService;
 
 @RestController
@@ -29,6 +31,8 @@ public class CollegueController {
 
 	@Autowired
 	private CollegueRepository colleguetRepo;
+	@Autowired
+	private VoteRepository voteRepo;
 
 	@GetMapping
 	public List<Collegue> listerexemples() {
@@ -48,6 +52,8 @@ public class CollegueController {
 			update = colleguetRepo.findByPseudo(pseudo);
 			update = CollegueService.voteControl(avis.getAction(), update);
 		}
+		Vote vote = new Vote(update, avis.getAction(), update.getScore());
+		voteRepo.save(vote);
 		colleguetRepo.save(update);
 		return update;
 	}
